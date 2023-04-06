@@ -36,14 +36,15 @@ python copy_images.py
 ```
 cd ../Val_train_split_images/
 python val_train_split_images.py
-
+```
 ## Model Training 
 
-In this step we will train the TeamID model on the newly prepared dataset. First, we will check the available GPU by using the following command 
+In this step we will train the TeamID model on the newly prepared dataset. First, we will check the available GPU by using the following command  and check the availble GPU.
 
 ```
-nvidia-smi command
+nvidia-smi 
 ```
+
 For traning the model go to the ```/Train``` and run the file **resnet_classifier.py**  using the following command
 ```
 cd ../train
