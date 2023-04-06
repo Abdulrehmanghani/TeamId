@@ -56,7 +56,7 @@ CUDA_VISIBLE_DEVICES= < Int corresponding to the available GPU like 0 or 1 >  py
 The evaluation of this model will done in the training code. The classification report will shown at the end of the training.
 
 ## Model Conversion
-In this step we will convert the **pytorch model** to **ONNX** so that we can deploy it inside the ** Triton Server ** . We will add the pytorch model path and the output model path in the code file named as **convert_pth_to_onnx.py** and run the following commands
+In this step we will convert the **pytorch model** to **ONNX** so that we can deploy it inside the **Triton Server** . We will add the pytorch model path and the output model path in the code file named as **convert_pth_to_onnx.py** and run the following commands
 ```
 cd ../Model_conversion
 python convert_pth_to_onnx.py
