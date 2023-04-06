@@ -52,15 +52,13 @@ CUDA_VISIBLE_DEVICES= < Int corresponding to the available GPU like 0 or 1 >  py
 
 ## Model Evaluation 
 
-The evaluation of this model will done in the training 
-```
+The evaluation of this model will done in the training code. The classification report will shown at the end of the training.
+
 ## Model Conversion
-In this step we will convert the **pytorch model** to **ONNX** so that we can deploy it inside the ** Triton Server ** . We will pass the pytorch model path and the output model path using the following command 
+In this step we will convert the **pytorch model** to **ONNX** so that we can deploy it inside the ** Triton Server ** . We will add the pytorch model path and the output model path in the code file named as **convert_pth_to_onnx.py** and run the following commands
 ```
-cd ../conversion
-conda activate detr_onnx
-python3 detr_pth2onnx.py --model_dir <Path to the check-point>  --check --onnx_dir < outout file path>
-python3 -m onnxsim detr_team.onnx detr_team_sim.onnx
+cd ../Model_conversion
+python convert_pth_to_onnx.py
 ```
 
 
